@@ -3,7 +3,7 @@
 Plugin Name: Social.com Button
 Plugin URI: http://www.social.com/main/wordpress-plugin/ 
 Description: Plugin to add the Social.com button into your Wordpress posts.
-Version: 1.0
+Version: 1.1
 Author: Scott Carter
 Author URI: http://www.social.com
 */
@@ -94,7 +94,7 @@ function social_get_button_code() {
     
     // If published, get the permanent url and title. 
     if (get_post_status($post->ID) == 'publish') {
-        $title = $post->post_title; 
+        $title = addslashes($post->post_title); 
         $url = get_permalink();   
     }
     

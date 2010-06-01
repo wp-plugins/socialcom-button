@@ -2,7 +2,7 @@
 Contributors: Social.com
 Tags: twitter, tweet, button, Social.com, widget, retweet
 Requires at least: 2.7
-Tested up to: 2.8.4
+Tested up to: 2.9.2
 Stable tag: trunk
 
 Plugin to add the Social.com Button into your Wordpress posts.
@@ -43,3 +43,18 @@ Follow these steps to install the Social.com plugin:
 1. The full button type which displays the number of tweets above the button.
 2. The compact button type which displays the number of tweets to the left of the button.
 3. One can also configure the plugin to display a button with no count.
+
+== Changelog ==
+
+= 1.1 =
+* Fixed a bug wherein a title containing a single quote was not being processed correctly.
+
+= 1.0 =
+* Initial version.
+
+== Upgrade Notice ==
+
+= 1.1 =
+This version fixes a problem wherein a title containing a single quote was not being processed correctly.
+
+
