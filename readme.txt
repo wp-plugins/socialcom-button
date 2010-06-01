@@ -3,7 +3,7 @@ Contributors: Social.com
 Tags: twitter, tweet, button, Social.com, widget, retweet
 Requires at least: 2.7
 Tested up to: 2.9.2
-Stable tag: trunk
+Stable tag: 1.1
 
 Plugin to add the Social.com Button into your Wordpress posts.
 
