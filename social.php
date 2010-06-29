@@ -3,7 +3,7 @@
 Plugin Name: Social.com Button
 Plugin URI: http://www.social.com/main/wordpress-plugin/ 
 Description: Plugin to add the Social.com button into your Wordpress posts.
-Version: 1.1
+Version: 1.2
 Author: Scott Carter
 Author URI: http://www.social.com
 */
@@ -100,13 +100,6 @@ function social_get_button_code() {
     
     $prefix = get_option('bigt_prefix');
     
-    $button_code .= <<<EOM
-<script type="text/javascript">
-    social_prefix = '$prefix';
-    social_title = '$title'; 
-    social_url = '$url';   
-</script>
-EOM;
 
     $label = get_option('bigt_button_label');
     $formFactor = get_option('bigt_button_form_factor');
@@ -117,6 +110,15 @@ EOM;
 
     
     $button_code .= '<div class="social_button" style="' . get_option('bigt_button_div_style') . '">';
+    
+    $button_code .= <<<EOM
+<script type="text/javascript">
+    social_prefix = '$prefix';
+    social_title = '$title'; 
+    social_url = '$url';   
+</script>
+EOM;
+    
 	$button_code .= '<script type="text/javascript" src="http://' . $host . '/widgets/button1.js?wid=4a9f1689e574f059&pid=4aabdca58f512b36&bl=' . urlencode($label) . '&bsnc=&bsnbac=&bshc=&bshbac=&bsnboc=&ff=' . $formFactor . '&mode=01&url=' . urlencode($url) . '"></script></div>';
 
     return $button_code;

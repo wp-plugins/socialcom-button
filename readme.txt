@@ -3,7 +3,7 @@ Contributors: Social.com
 Tags: twitter, tweet, button, Social.com, widget, retweet
 Requires at least: 2.7
 Tested up to: 2.9.2
-Stable tag: 1.1
+Stable tag: 1.2
 
 Plugin to add the Social.com Button into your Wordpress posts.
 
@@ -46,6 +46,9 @@ Follow these steps to install the Social.com plugin:
 
 == Changelog ==
 
+= 1.2 =
+* Make the widget more resistant to any problems with surrounding HTML code due to other plugins.  In one case, an incorrectly terminated div section unrelated to this widget was causing issues when a blog link was attached within Facebook.
+
 = 1.1 =
 * Fixed a bug wherein a title containing a single quote was not being processed correctly.
 
@@ -53,6 +56,9 @@ Follow these steps to install the Social.com plugin:
 * Initial version.
 
 == Upgrade Notice ==
+
+= 1.2 =
+This version makes the widget more resistant to any problems with surrounding HTML code due to other plugins.
 
 = 1.1 =
 This version fixes a problem wherein a title containing a single quote was not being processed correctly.
